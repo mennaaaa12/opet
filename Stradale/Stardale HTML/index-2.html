@@ -30,20 +30,19 @@
 <body class="dark-scheme">
     <script>
         $(document).ready(function() {
-            // Scroll to the section when "الاصناف" is clicked
             $('a[href="#section-drinks"]').on('click', function(event) {
-                event.preventDefault(); // Prevent default anchor click behavior
+                event.preventDefault(); 
                 $('html, body').animate({
                     scrollTop: $('#section-drinks').offset().top
-                }, 1000); // Adjust the scroll speed (1000 = 1 second)
+                }, 1000); 
             });
     
-            // Scroll to the section when "تواصل معنا" is clicked
+            
             $('a[href="#subheader"]').on('click', function(event) {
-                event.preventDefault(); // Prevent default anchor click behavior
+                event.preventDefault(); 
                 $('html, body').animate({
                     scrollTop: $('#subheader').offset().top
-                }, 1000); // Adjust the scroll speed (1000 = 1 second)
+                }, 1000); 
             });
         });
     </script>
