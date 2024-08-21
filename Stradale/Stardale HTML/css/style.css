@@ -18,10 +18,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield);
 
-@font-face {
+/* @font-face {
     font-family: Lenos;
     src: url(../fonts/Lenos/Variable/LenosGX.ttf);
-  }
+  } */
 
 /* ================================================== */
 
@@ -37,7 +37,7 @@
 @import url("../fonts/icofont/icofont.min.css");
 
 * {
-    --body-font: "Lenos", Helvetica, Arial, sans-serif;
+    --body-font: "Lenos", Helvetica, Arial, sans-serif,"FontAwesome";
     --title-font: "JHNaskh Extended", Helvetica, Arial, sans-serif;
     --deco-font: "Mrs Saint Delafield";
 }
@@ -1031,6 +1031,7 @@ footer {
 
 footer.footer-light {
     background: #ffffff !important;
+    ;
     border-top: solid 1px #d2d2d2;
     color: #595d69;
 }
@@ -2284,6 +2285,7 @@ footer:not(.footer-light) #form_subscribe.form-dark input[type=text] {
     border-right: none;
     padding: 6px 12px;
 }
+
 
 #form_subscribe input[type=text]:focus {
     background: rgba(255, 255, 255, .2);
