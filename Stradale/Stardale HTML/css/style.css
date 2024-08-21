@@ -60,10 +60,12 @@
 /* ================================================== */
 
 html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     background: #ffffff;
+    
 }
 
 body {    
@@ -656,7 +658,7 @@ header .header-col.mid .social-icons {
     display: inline-block;
     padding: 30px 18px;
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     outline: none;
 }
@@ -1029,7 +1031,6 @@ footer {
 
 footer.footer-light {
     background: #ffffff !important;
-    ;
     border-top: solid 1px #d2d2d2;
     color: #595d69;
 }
@@ -2037,8 +2038,7 @@ header.header-light .logo-2 {
     bottom: 0;
 }
 
-.de-card-2{
-}
+
 
 .de-card-2 h4{
     margin-bottom: 10px;
@@ -2937,7 +2937,7 @@ a.btn-border,
 a.btn-line {
     font-family: var(--title-font);
     text-align: center;
-    color: #fff;
+    color: white;
     border-radius: 0px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -2945,11 +2945,11 @@ a.btn-line {
     font-weight: 800;
     text-decoration: none;
     padding: 8px 30px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 700;
     border: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 
 a.btn-line,
@@ -3780,7 +3780,7 @@ h5.s1{
 }
 
 .de-title h2{
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     font-size: 32px;
     margin-top: -50px;
 }
@@ -5894,7 +5894,7 @@ i.font60 {
     background: none;
 }
 
-.de-color-icons i{
+.de-color-icons i {
     text-shadow: none;
     color: #fff;
     padding: 12px 10px 8px 10px;
@@ -5908,23 +5908,31 @@ i.font60 {
     margin: 0 1px 10px 1px;
 }
 
+.de-color-icons .fa-twitter { background: #3ea1ec; }
+.de-color-icons .fa-facebook { background: #344e86; }
+.de-color-icons .fa-google-plus { background: #d73925; }
+.de-color-icons .fa-reddit { background: #c23321; }
+.de-color-icons .fa-linkedin { background: #0976b4; }
+.de-color-icons .fa-pinterest { background: #cc2127; }
+.de-color-icons .fa-stumbleupon { background: #eb4924; }
+.de-color-icons .fa-delicious { background: #198cff; }
 
-.de-color-icons .fa-twitter{background: #3ea1ec;}
-.de-color-icons .fa-facebook{background: #344e86;}
-.de-color-icons .fa-google-plus{background: #d73925;}
-.de-color-icons .fa-reddit{background: #c23321;}
-.de-color-icons .fa-linkedin{background: #0976b4;}
-.de-color-icons .fa-pinterest{background: #cc2127;}
-.de-color-icons .fa-stumbleupon{background: #eb4924;}
-.de-color-icons .fa-delicious{background: #198cff;}
-
-.de-color-icons span{
-    cursor: poInter;
+.de-color-icons span {
+    cursor: pointer; /* Correct spelling */
     display: inline-block;
 }
 
-.de-color-icons span:hover{
+.de-color-icons span:hover {
     transform: scale(1.1);
+}
+
+
+.social-icons i.fa-google-plus {
+    padding: 12px 14px 10px 6px;
+}
+
+.fa-apple {
+    color: #0EC3F7;
 }
 
 /*
@@ -12037,6 +12045,13 @@ section.bg-grey {
     visibility: hidden;
 }
 
+
+
+#scroll-to-bottom:hover {
+    transform: scale(1.1);
+}
+
+
 #back-to-top {
     background: #ffffff;
     position: fixed;
@@ -14144,6 +14159,7 @@ header.smaller,
 }
 
 .menu-item.thead .c1{
+  display: flex;
   font-family: Lenos;
   position: relative;
   font-size:25px;
@@ -15294,7 +15310,7 @@ a.btn-slider:hover {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display : inline;
 }
 
 .testi-slider .flex-control-paging li a {
